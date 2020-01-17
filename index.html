@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="document.form1.reset();">
 	<!-- header -->
 	<header>
 		<div class="out_bg1"></div>
@@ -362,7 +362,7 @@
 						<p class="sub_desc">Thank You</p>
 						<h3><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
 						<span>M</span><span>E</span></h3>
-						<form action="./contact_me.php" method="post" name="form">
+						<form action="contact_me.php" method="post" name="form">
 							<label for="name">이름 (필수)</label>
 							<input type="text" id="name" name="name" placeholder="이름" required>
 							<label for="email">이메일 (필수)</label>
