@@ -1,0 +1,94 @@
+/* 웹 폰트 사용 */
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  overflow: hidden;
+  font-family: 'Abel', sans-serif;
+}
+
+.move_image {
+  width: 400px; height: 600px;
+
+  /* 가운데로 정렬 */
+  position: absolute; 
+  left: 50%; top: 50%;
+  transform: translate(-50%,-50%) perspective(600px)
+  rotateX(0deg) rotateY(10deg);  
+  /* 3D를 사용하기 위해서는 반드시 선언해야한다 상위태그에 perspectiv 사용*/
+  transform-style: preserve-3d;
+}
+
+.mimg {
+  position: relative;
+  width: 400px; height: 600px;
+  transform: translatez(80px) scale(0.8);
+}
+/* 두개의 이미지가 저장이 된것입니다. */
+.mimg::before, .mimg::after{
+  content: '';
+  position: absolute; left: 0; top: 0;
+  /* 크기를 상속을 받는다. */
+  width:100%; height: 100%;
+  /* 외부이미지를 저장 */
+  background: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBW7gm3.img?h=1199&w=799&m=6&q=60&o=f&l=f&x=1091&y=767);
+  background-size: cover;
+  border-radius: 10px;
+}
+/* 뒤에있는 이미지에 그림자를 지정 */
+.mimg::after{
+  height: 30px;
+  /* 위에서 top이 0으로 선언되어있기때문에 초기화 해줄려면 auto로 지정한다 -> 밑으로 사진이 추가된다 */
+  top: auto; bottom: -15px;
+  /* x축과 y축 사이즈를 지정 */
+  background-size: 100% 30px;
+  /* 필터의 블러 효과로 뿌옇게 보이게된다 v*/
+  filter: blur(15px);
+  /* 뒤로보낸다 */
+  z-index: -1;
+}
+.mtext{
+  position: absolute; top: 0; left: 0;
+  z-index: 2;
+  width: 400px; height: 600px;
+  border: 3px solid #fff;
+  /* 위로 올라온듯한 효과를 보여준다 */
+  transform: translatez(150px) translatex(-18px) translatey(-20px) scale(0.5);
+  /* 투명효과를 표현 */ 
+  background: linear-gradient(135deg,
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0.36) 35%,
+    rgba(255,255,255,0.07) 41%,
+    rgba(255,255,255,0) 51%,
+    rgba(255,255,255,0) 100%
+  );
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1050px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.mtext::after{
+  content:'World Class';
+  position: absolute; left: 0; bottom: 0;
+  font-size: 20px; line-height: 75px;
+  width: 100%;
+  font-weight: normal;
+  letter-spacing: 14px;
+  text-indent: 12px;
+}
+
+.cursor{
+  position: absolute;
+  border: 2px solid #fff;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  z-index: 1000;
+  user-select: none; /* 선택을 불가능하게 한다. */
+  pointer-events: none; /* 클릭이벤트를 허용하지 않는다. */
+}

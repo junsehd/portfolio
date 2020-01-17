@@ -1,0 +1,25 @@
+/* 웹 폰트 사용 */
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word {
+  color: #fff;
+  font-size: 6rem;
+  font-family: "Jua", cursive;
+  font-weight: bold;
+  text-transform:uppercase;
+  text-shadow:
+    10px 10px 0 rgba(255,255,255,0.3),
+    -10px 10px 0 rgba(255,255,255,0.2),
+    10px -10px 0 rgba(255,255,255,0.1),
+    -10px -10px 0 rgba(255,255,255,0.2); 
+}

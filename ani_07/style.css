@@ -1,0 +1,80 @@
+
+body {
+	background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+}
+
+.ball {
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	background: url(https://cdn.pixabay.com/photo/2012/04/18/18/13/football-37462_960_720.png);
+	background-size: cover;
+}
+
+/* 호버하면 이미지가 안보이도록 설정 */
+.ball:hover {display: none;}
+
+.b1 {
+	animation: ball_up 10s linear infinite, ball_left 5s ease-in-out 2s infinite alternate;
+	left: 50%;
+	top: 50%;
+	transform: scale(0.5);
+}
+
+.b2 {
+	animation: ball_up 5s linear infinite, ball_left 4s ease-in-out 1s infinite alternate;
+	left: 15%;
+	top: 30%;
+	transform: scale(0.7);
+}
+
+.b3 {
+	animation: ball_up 4s linear infinite, ball_left 6s ease-in-out 6s infinite alternate;
+	left: 20%;
+	top: 30%;
+	transform: scale(1.2);
+}
+
+.b4 {
+	animation: ball_up 6s linear infinite, ball_left 5s ease-in-out 3s infinite alternate;
+	left: 25%;
+	top: 90%;
+	transform: scale(0.5);
+}
+
+.b5 {
+	animation: ball_up 8s linear infinite, ball_left 6s ease-in-out 3s infinite alternate;
+	left: 30%;
+	top: 30%;
+	transform: scale(1.1);
+}
+
+.b6 {
+	animation: ball_up 7s linear infinite, ball_left 4s ease-in-out 3.5s infinite alternate;
+	left: 40%;
+	top: 50%;
+	transform: scale(0.7);
+}
+
+.b7 {
+	animation: ball_up 6s linear infinite, ball_left 5s ease-in-out 4s infinite alternate;
+	left: 90%;
+	top: 90%;
+	transform: scale(0.6);
+}
+
+@keyframes ball_up {
+	0% {margin-top: 100%;}
+	100% {margin-top: -100%;}
+}
+
+@keyframes ball_left {
+	0% {margin-left: 0;}
+	100% {margin-left: 20%;}
+}
