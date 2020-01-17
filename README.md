@@ -4,4 +4,4 @@
 
 아래는 저의 포트폴리오 사이트 주소 입니다.
 
-홈페이지 주소 : https://junsehd.github.io/portfolio
+홈페이지 주소 : https://junsehd.github.io/portfolio/index.html
