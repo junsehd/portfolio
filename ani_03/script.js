@@ -4,7 +4,7 @@
   const shadow = e => {
     const {x, y} = e;
     const gBCR = word.getBoundingClientRect(); //요소의 크기와 요소의 viewport에서 상대적인 위치를 반환
-    const w = this; //shadow의 word 값을 의미
+
     const moveX = (x - gBCR.left - gBCR.width/2) / gBCR.width * 10; //움직이는 X좌표 범위를 공식으로 지정
     const moveY = (y - gBCR.left - gBCR.height/2) / gBCR.height * 10; //움직이는 Y좌표 범위를 공식으로 지정
     

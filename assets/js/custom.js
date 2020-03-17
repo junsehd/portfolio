@@ -1,11 +1,12 @@
-$(function () {
+$(document).ready(function() {
     //섹션 1,2,5 꽉차게 지정
     $(window).resize(function () {
         var h = $(window).height();
+		
         $("#section1").height(h);
         $("#section2").height(h);
-        $("#section5").height(h);
-		
+        $("#section5").height(h);	
+
     }); //resize
 
     //시작하자마자 강제로 실행
@@ -33,10 +34,10 @@ $(function () {
         $("html,body").stop().animate({scrollTop:dotOffset},500,"easeInOutExpo");
     });
     
-    //햄버거 메뉴
+    //PC 태블릿 햄버거 메뉴
     $(".menu").click(function (e) {
         e.preventDefault();
-        $("body").toggleClass("scroll");
+        //$("body").toggleClass("scroll");
         $(".inner_menu").toggleClass("show");
         $(".sub_menu").toggleClass("show");
         $(".menu_left li").eq(5).show();
@@ -62,15 +63,41 @@ $(function () {
         
         //링크를 클릭하면 클래스 제거
         $(".menu_right li a").click(function(){
-            $("body").removeClass("scroll");
+            //$("body").removeClass("scroll");
             $(".inner_menu").removeClass("show");
             $(".sub_menu").removeClass("show");
             $(".menu").find("img").attr("src", "./assets/img/menu_on.png");
         });
         
     }); //메뉴
-    
-    
+	
+	//모바일 햄버거 메뉴
+	$(".m_menu").click(function (e) {
+        e.preventDefault();
+        $("body").toggleClass("scroll");
+        $(".inner_menu").toggleClass("show");
+        $(".sub_menu").toggleClass("show");
+		
+		//메뉴 아이콘 변경
+        if ($(".inner_menu").hasClass("show")) {
+            $(".m_menu i").removeClass("fa-bars");
+			$(".m_menu i").addClass("fa-times");
+        } else {
+            $(".m_menu i").removeClass("fa-times");
+            $(".m_menu i").addClass("fa-bars");
+        }
+        
+        //링크를 클릭하면 클래스 제거
+        $(".menu_right li a").click(function(){
+            $("body").removeClass("scroll");
+            $(".inner_menu").removeClass("show");
+            $(".sub_menu").removeClass("show");
+			$(".m_menu i").removeClass("fa-times");
+            $(".m_menu i").addClass("fa-bars");
+        });
+        
+    }); //메뉴
+	
     //section2 캐릭터 클릭시 모달창
     $(".keeper img").click(function(e){
         e.preventDefault();
@@ -85,7 +112,7 @@ $(function () {
     });
     
 	//dot 메뉴 오프셋탑값 변수 저장
-    var dTop = $("#dot").offset().top;
+    var dTop = $("#dot").offset().top+100;
 	
     //스크롤 시 애니메이션
     $(window).scroll(function(){
@@ -192,6 +219,7 @@ $(function () {
             $(".sec3 .cont_left .s3_text").eq(3).removeClass("show");
              $(".sec3 .cont_left .s3_img").eq(3).removeClass("show");
         }
+		
 
         //오른쪽 컨텐츠
         if(wScroll >= $(".sec3 .cont_right .s3_text").offset().top - winHight2){
@@ -216,6 +244,13 @@ $(function () {
         }else {
             $(".sec3 .cont_right .s3_text").eq(2).removeClass("show");
             $(".sec3 .cont_right .s3_img").eq(2).removeClass("show");
+        }
+		if(wScroll >= $(".sec3 .cont_right .s3_text").eq(3).offset().top - winHight2){
+            $(".sec3 .cont_right .s3_text").eq(3).addClass("show");
+            $(".sec3 .cont_right .s3_img").eq(3).addClass("show");
+        }else {
+            $(".sec3 .cont_right .s3_text").eq(3).removeClass("show");
+            $(".sec3 .cont_right .s3_img").eq(3).removeClass("show");
         }
 	
 		
@@ -251,7 +286,7 @@ $(function () {
             $(".sec4 .cont_left .s4_text").eq(2).addClass("show");
             $(".sec4 .cont_left .animate").eq(2).addClass("show");
         }else {
-            $(".sec4 .cont_left .s3_text").eq(2).removeClass("show");
+            $(".sec4 .cont_left .s4_text").eq(2).removeClass("show");
             $(".sec4 .cont_left .animate").eq(2).removeClass("show");
         }  
         if(wScroll >= $(".sec4 .cont_left .s4_text").eq(3).offset().top - winHight2){
@@ -287,10 +322,24 @@ $(function () {
             $(".sec4 .cont_right .animate").eq(2).removeClass("show");
         }
 		
+		//section5
+        if(wScroll >= $(".sec5 .sub_desc").offset().top - winHight2){
+            $(".sec5 .sub_desc").addClass("show");
+        }else {
+            $(".sec5 .sub_desc").removeClass("show");
+        }
+        if(wScroll >= $(".sec5 h3").offset().top - winHight2){
+            $(".sec5 h3").addClass("show");
+        }else {
+            $(".sec5 h3").removeClass("show");
+        }
+		if(wScroll >= $(".sec5 .contact").offset().top - winHight2){
+            $(".sec5 .contact").addClass("show");
+        }else {
+            $(".sec5 .contact").removeClass("show");
+        }
 		
 
     });//스크롤
-
-    
     
 }); //function

@@ -92,3 +92,10 @@ body{
   user-select: none; /* 선택을 불가능하게 한다. */
   pointer-events: none; /* 클릭이벤트를 허용하지 않는다. */
 }
+
+@media (max-width: 600px){
+	.move_image {width: 250px; height: 400px;}
+	.mimg {width: 250px; height: 400px;}
+	.mtext {width: 250px; height: 400px; font-size: 30px; line-height: 900px; transform: translatez(150px) translatex(-3px) translatey(-20px) scale(0.5)}
+	.mtext::after {line-height: 40px;}
+}
