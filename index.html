@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -8,22 +9,28 @@
 	<meta name="keywords" content="웹퍼블리셔, 웹접근성, 반응형사이트, 모바일 사이트 포트폴리오">
 	<title>포트폴리오</title>
 
+	<!-- 폰트어썸 -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<!-- style -->
 	<link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<!-- script -->
-	<script src="assets/js/modernizr-custom.js"></script>
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
-	<script src="assets/js/jquery-ui-1.12.1.min.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<!-- HTLM5shiv ie6~8 -->
+	<!--[if lt IE 9]> 
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script type="text/javascript">
+            alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다!");
+        </script>
+   <![endif]-->
 
 </head>
 
-<body onload="document.form1.reset();">
+<body>
 	<!-- header -->
 	<header>
 		<div class="out_bg1"></div>
@@ -49,6 +56,9 @@
 		</h1>
 		<div class="menu">
 			<a href="#"><img src="./assets/img/menu_on.png" alt="메뉴사진"></a>
+		</div>
+		<div class="m_menu">
+			<a href="#"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></a>
 		</div>
 	</nav>
 	<!-- //nav -->
@@ -100,7 +110,7 @@
 		<section id="section1">
 			<div class="sec1">
 				<div class="text">
-					<span class="desc">안녕하세요 신입 웹퍼블리셔 홍동호의 개인 홈페이지 사이트 입니다.</span>
+					<span class="desc">신입 웹퍼블리셔 홍동호의 개인 홈페이지 사이트 입니다.</span>
 					<h2>HONG<span class="color">DONG HO</span></h2>
 					<a href="#section2" class="btn"><span>포트폴리오 보기</span></a>
 				</div>
@@ -130,11 +140,7 @@
 						<div id="modal">
 							<div class="modal_bg">
 								<a href="#" class="close">
-									<svg viewBox="0 0 24 24">
-										<path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
-                            L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
-                            s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z" />
-									</svg>
+									<i class="fa fa-times" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
@@ -184,7 +190,6 @@
 		<!-- //section2 -->
 
 		<section id="section3">
-			<div class="s3_bg"></div>
 			<div class="container">
 				<div class="row">
 					<div class="sec3">
@@ -252,7 +257,7 @@
 								<a href="http://dongho.dothome.co.kr/kfa/" target="_blank" class="btn"><span>VIEW SITE</span></a>
 							</div>
 						</div>
-						<div class="cont_left">
+						<div class="cont_left last">
 							<div class="s3_img"><img src="assets/img/work_07.png" alt="모바일사이트"></div>
 							<div class="s3_text">
 								<p class="s3_tit">PROJECT 07</p>
@@ -262,6 +267,16 @@
 								<a href="http://dongho.dothome.co.kr/kfa_mobile/" target="_blank" class="btn"><span>VIEW SITE</span></a>
 							</div>
 						</div>
+						<div class="cont_right last">
+							<div class="s3_img"><img src="assets/img/work_08.png" alt="MusicApp"></div>
+							<div class="s3_text">
+								<p class="s3_tit">PROJECT 8</p>
+								<h4 class="h4_tit">Music App</h4>
+								<p class="s3_desc">Figma Design & Coding</p>
+								<span class="txt">Music App Figma Design & Coding</span>
+								<a href="https://junsehd.github.io/apple/index.html" target="_blank" class="btn"><span>VIEW SITE</span></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -269,7 +284,6 @@
 		<!-- //section3 -->
 
 		<section id="section4">
-			<div class="s4_bg"></div>
 			<div class="container">
 				<div class="row">
 					<div class="sec4">
@@ -288,7 +302,7 @@
 							</div>
 						</div>
 						<div class="cont_right top">
-							<iframe class="animate" src="ani_02/index.html" width="100%" height="700px" frameborder="0"></iframe>
+							<iframe class="animate top2" src="ani_02/index.html" width="100%" height="700px" frameborder="0"></iframe>
 							<div class="s4_text">
 								<p class="s4_tit">PROJECT 02</p>
 								<h4 class="h4_tit">ANIMAITION</h4>
@@ -297,7 +311,7 @@
 								<a href="https://codepen.io/hongdongho/pen/KKPGLPm" target="_blank" class="btn"><span>VIEW SITE</span></a>
 							</div>
 						</div>
-						<div class="cont_left">
+						<div class="cont_left mt350">
 							<iframe class="animate" src="ani_03/index.html" width="100%" height="500px" frameborder="0"></iframe>
 							<div class="s4_text">
 								<p class="s4_tit">PROJECT 03</p>
@@ -328,7 +342,7 @@
 							</div>
 						</div>
 						<div class="cont_right">
-							<iframe class="animate" src="ani_06/index.html" width="100%" height="540px" frameborder="0" scrolling="no"></iframe>
+							<iframe class="animate top3" src="ani_06/index.html" width="100%" height="540px" frameborder="0" scrolling="no"></iframe>
 							<div class="s4_text">
 								<p class="s4_tit">PROJECT 06</p>
 								<h4 class="h4_tit">ANIMAITION</h4>
@@ -355,24 +369,29 @@
 		<!-- //section4 -->
 
 		<section id="section5">
-			<div class="s5_bg"></div>
 			<div class="container">
 				<div class="row">
 					<div class="sec5">
 						<p class="sub_desc">Thank You</p>
 						<h3><span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>
-						<span>M</span><span>E</span></h3>
-						<form action="contact_me.php" method="post" name="form">
-							<label for="name">이름 (필수)</label>
-							<input type="text" id="name" name="name" placeholder="이름" required>
-							<label for="email">이메일 (필수)</label>
-							<input type="email" id="email" name="email" placeholder="이메일" required>
-							<label for="phone">전화번호 (필수)</label>
-							<input type="tel" id="phone" name="phone" placeholder="전화번호" required>
-							<label for="message">문의내용 (필수)</label>
-							<textarea id="message" name="message" placeholder="문의내용" required></textarea>
-							<input type="submit" value="보내기">
-						</form>
+							<span>M</span><span>E</span></h3>
+						<div class="contact">
+							<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/junsehd@naver.com" method="post">
+								<fieldset id="fs-frm-inputs">
+									<label for="full-name" class="ir_su">이름</label>
+									<input type="text" name="이름" id="full-name" placeholder="성함을 입력해주세요" required="" class="name">
+
+									<label for="email-address" class="ir_su">이메일주소</label>
+									<input type="email" name="메일" id="email-address" placeholder="메일주소를 입력해주세요" required="" class="email">
+
+									<label for="message" class="ir_su">내용</label>
+									<textarea rows="5" name="내용" id="message" placeholder="내용을 입력해주세요" required=""></textarea>
+
+									<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+									<input class="submit" type="submit" value="전송">
+								</fieldset>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -381,5 +400,14 @@
 
 	</main>
 	<!-- //본문영역 -->
+	
+	<!-- script -->
+	<scirpt src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></scirpt>
+	<script src="assets/js/html5shiv.min.js"></script>
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	
+</body>
 
-</body></html>
+</html>
