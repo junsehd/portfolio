@@ -292,11 +292,11 @@ body.active .sec1 .text .btn {opacity: 1; transform: translateY(0);}
 }
 #modal .modal_bg .close {
     position: absolute;
-    top: 10px; 
-    left: 705px; 
+    top: 20px; 
+    left: 700px; 
     padding: 15px; 
     border-radius: 50%;
-	font-size: 50px;
+	font-size: 40px;
 	color: #fff;
 }
 
