@@ -713,7 +713,7 @@ margin-top: 20px;}
 	.sec2 .keeper {margin-top: 50px;}
 	.sec2 .keeper img {width: 250px;}
 	
-	#modal .modal_bg {background-size: 50%; left: 85%; top: 50%;}
+	#modal .modal_bg {background-size: 50%; left: 100%; top: 50%; transform: translate(-50%,-50%);}
 	#modal .modal_bg .close {left: 340px; top: 15px; font-size: 28px;}
 
 	
