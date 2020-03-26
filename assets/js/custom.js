@@ -13,7 +13,8 @@ $(document).ready(function() {
     $(window).trigger("resize");
     
     //시작 로고 클릭 메뉴
-    $(".out_logo").click(function () {
+    $(".out_logo").click(function (e) {
+		e.preventDefault();
         $(".out_logo").fadeOut(2000);
         $("body").addClass("active");
 

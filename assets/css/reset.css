@@ -7,7 +7,6 @@ textarea,button,form,figure,figcaption{margin:0;padding:0;}
 /* a 링크 초기화 */
 a {color: #222; text-decoration: none;}
 
-
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family: 'Fugaz One','Poppins','Nanum Gothic', 
 AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',cursive,sans-serif; color: #222; 
@@ -23,7 +22,7 @@ ul,li,ol {list-style: none;}
 h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
 
 /* 버튼 초기화 */
-button {border:0;}
+button, iframe {border:none;}
 
 /* 반응형 이미지 */
 img, video {width: 100%; border: none;}
