@@ -79,8 +79,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
   height: 10px;
   border-top: solid 1px #fff;
   border-right: solid 1px #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .up span{
     position:absolute;
@@ -116,8 +115,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
   height: 10px;
   border-bottom: solid 1px #fff;
   border-left: solid 1px #fff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .up2 span{
     position:absolute;
@@ -527,14 +525,6 @@ margin-top: 20px;}
 .sec5 .sub_desc.show {opacity: 1; transform: translateY(0);}
 .sec5 h3.show span {opacity: 1; transform: translateY(0);}
 .sec5 .contact.show {opacity: 1; transform: translateX(0px);}
-
-/* 스크롤바 */
-/* width */
-::-webkit-scrollbar {width: 8px;}
-/* Track */
-::-webkit-scrollbar-track {background: #fff;}
-/* Handle */
-::-webkit-scrollbar-thumb {background: red; }
 
 
 /* keyframes */
