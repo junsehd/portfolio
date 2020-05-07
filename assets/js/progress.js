@@ -24,7 +24,7 @@ $(function () {
         //진행률 -> 바, 숫자 100/192 * 100
         function updateProgress(){
             var target = (imgLoaded/imgTotal) * 100;
-            current += (target - current) * 0.7; //속도 조절
+            current += (target - current) * 0.1; //속도 조절
             
             //$progressBar.css({width:150+"px"});
             $progressText.text(Math.floor(current)+"%");
