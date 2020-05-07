@@ -20,43 +20,6 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 /* inner_menu 내의 컨테이너 */
 .sub_container {position: relative; margin: 0 10%;}
 
-/* 로딩프로그레스 */
-.progress { 
-	background-image: -webkit-linear-gradient(top right, #04befe 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-	background-image: -o-linear-gradient(top right, #04befe 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-	background-image: linear-gradient(to bottom left, #04befe 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-	color: rgb(255, 255, 255);
-	height: 100%;
-	position: absolute;
-	width: 100%;
-	z-index: 999;
-}
-.progress-bar { 
-	border: 5px solid rgb(255, 255, 255, 0.5);
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-    position: absolute;
-    top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	transition: all 0.3s ease;
-	z-index: 999;
-}
-.progress-text {
-    font-size: 25px;
-	text-align: center;
-    position: absolute;
-    top:50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-    width: 100%;
-	z-index: 999;
-}
-.progress-complete .progress-bar {
-    border-color: rgb(255, 255, 255);
-}
-
 /* 헤더 */
 .out_bg1{
 	position:fixed;
@@ -65,7 +28,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	transform:skewX(-30deg);
 	background-color:blue;
 	left:-50%;
-	z-index:990;
+	z-index:999;
 	opacity:1;
 }
 
@@ -76,7 +39,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	transform:skewX(-30deg);
 	background-color:red;
 	right:-50%;
-	z-index:990;
+	z-index:999;
 	opacity:1;
 }
 .out_logo{
@@ -84,7 +47,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	left:50%;
 	top:50%;
     transform:translate(-50%,-50%);
-    z-index:990;
+    z-index:999;
 }
 .out_logo img {width: 110vh;}
 
