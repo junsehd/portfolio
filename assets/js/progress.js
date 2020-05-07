@@ -26,7 +26,7 @@ $(function () {
             var target = (imgLoaded/imgTotal) * 100;
             current += (target - current) * 0.7; //속도 조절
             
-            $progressBar.css({width:150+"px"});
+            //$progressBar.css({width:150+"px"});
             $progressText.text(Math.floor(current)+"%");
             
             if(current > 99.9){

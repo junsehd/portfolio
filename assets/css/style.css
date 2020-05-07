@@ -20,6 +20,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 /* inner_menu 내의 컨테이너 */
 .sub_container {position: relative; margin: 0 10%;}
 
+
 /* 로딩프로그레스 */
 .progress { 
 	background-image: -webkit-linear-gradient(top right, #04befe 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
@@ -32,7 +33,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	z-index: 999;
 }
 .progress-bar { 
-	border: 5px solid rgb(255, 255, 255, 0.5);
+	border: 3px solid rgb(255, 255, 255, 0.4);
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
@@ -44,7 +45,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	z-index: 999;
 }
 .progress-text {
-    font-size: 25px;
+    font-size: 30px;
 	text-align: center;
     position: absolute;
     top:50%;
@@ -54,7 +55,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	z-index: 999;
 }
 .progress-complete .progress-bar {
-    border-color: rgb(255, 255, 255);
+	border: 6px solid rgb(255, 255, 255);
 }
 
 /* 헤더 */
