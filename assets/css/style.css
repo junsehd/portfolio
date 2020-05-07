@@ -65,7 +65,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	transform:skewX(-30deg);
 	background-color:blue;
 	left:-50%;
-	z-index:999;
+	z-index:990;
 	opacity:1;
 }
 
@@ -76,7 +76,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	transform:skewX(-30deg);
 	background-color:red;
 	right:-50%;
-	z-index:999;
+	z-index:990;
 	opacity:1;
 }
 .out_logo{
@@ -84,7 +84,7 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	left:50%;
 	top:50%;
     transform:translate(-50%,-50%);
-    z-index:999;
+    z-index:990;
 }
 .out_logo img {width: 110vh;}
 
