@@ -6,7 +6,7 @@ $(function () {
     */
     
     var $container = $("#progress"),
-        $progressBar = $container.find(".progress-bar"),
+        $progressBar = $container.find(".planet_wrap"),
         $progressText = $container.find(".progress-text"),
         
         imgLoad = imagesLoaded("body"), //이미지로드를 파악하기 위해서 변수로 지정
@@ -32,10 +32,10 @@ $(function () {
             
             if(current > 99.9){
                 clearInterval(progressTimer); //멈추려는 함수
-                $container.addClass("progress-complete");
+                //$container.addClass("progress-complete");
                 
                 $progressBar.add($progressText).delay(500).animate({opacity:0}, 250, function(){
-                    $container.animate({left:"-100%"},1000,"easeInOutQuint");
+                    $container.animate({top:"-100%"},1000,"easeInOutQuint");
                 });
             }
             
