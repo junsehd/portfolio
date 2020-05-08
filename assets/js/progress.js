@@ -30,12 +30,12 @@ $(function () {
             //$progressBar.css({width:150+"px"});
             $progressText.text(Math.floor(current)+"%");
             
-            if(current > 99.9){
+            if(current > 99.99){
                 clearInterval(progressTimer); //멈추려는 함수
-                //$container.addClass("progress-complete");
+                $progressBar.addClass("active");
                 
                 $progressBar.add($progressText).delay(500).animate({opacity:0}, 250, function(){
-                    $container.animate({top:"-100%"},1000,"easeInOutQuint");
+                    $container.animate({top:"-100%"},200,"easeInOutQuint");
                 });
             }
             

@@ -93,6 +93,15 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 	margin: auto;
 	background: none;
 	border-color: #fff;
+	transition: all 0.3s ease;
+}
+
+.progress .planet_wrap.active .ball_planet {
+	background-image: linear-gradient(to bottom, red, blue); 
+	border: 5px solid #fff; 
+	width: 500px; 
+	height: 500px;
+	z-index: 999;
 }
 
 .progress-text {
