@@ -20,7 +20,6 @@ background: rgba(0,0,0,0.3); z-index: 1;}
 /* inner_menu 내의 컨테이너 */
 .sub_container {position: relative; margin: 0 10%;}
 
-
 /* 로딩프로그레스 */
 .progress {
 	background-image: -webkit-linear-gradient(top right, #04befe 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
