@@ -27,17 +27,21 @@ $(function () {
             current += (target - current) * 0.1; //속도 조절
             
             //console.log(current);
-            //$progressBar.css({width:150+"px"});
+            //$progressBar.css({ width: current + "%" });
             $progressText.text(Math.floor(current)+"%");
             
-            if(current > 99.99){
+            if(current >= 100){
                 clearInterval(progressTimer); //멈추려는 함수
-                $progressBar.addClass("active");
-                
+				
+                //$progressBar.addClass("active");
                 $progressBar.add($progressText).delay(500).animate({opacity:0}, 250, function(){
                     $container.animate({top:"-100%"},200,"easeInOutQuint");
                 });
             }
+			
+			if(current > 99.9){
+				current = 100;
+			}
             
         }//updateProgress
     
