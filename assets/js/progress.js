@@ -32,7 +32,6 @@ $(function () {
             
             if(current >= 100){
                 clearInterval(progressTimer); //멈추려는 함수
-				
                 //$progressBar.addClass("active");
                 $progressBar.add($progressText).delay(500).animate({opacity:0}, 250, function(){
                     $container.animate({top:"-100%"},200,"easeInOutQuint");
